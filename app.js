@@ -7,12 +7,9 @@ const createError = require('http-errors'),
  	  path = require('path'),
  	  cookieParser = require('cookie-parser'),
  	  logger = require('morgan'),
-      fastify = require('fastify')({ logger: { level: 'trace' } }),
+          fastify = require('fastify')({ logger: { level: 'trace' } }),
  	  app = express();
 
-// fastify.register(require("fastify-formbody"));
-
-// define routes
 let indexRouter = require('./routes/index'),
     usersRouter = require('./routes/users');
 
