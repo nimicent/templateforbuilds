@@ -1,8 +1,62 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root {
+  --color-bg: #FFFFF3;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 28vh;
+/*--image-max-width: 300px;
+  --image-margin: 3rem;*/
+  --font-family: "Arial";
 }
 
-a {
-  color: #00B7FF;
+/* 🐯🐯🐯
+*/
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+body {
+  font-family: 'Arial';
+  background-color: var(--color-bg);
+}
+
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+
+.title {
+  color: black;
+  font-family: 'Arial', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4vw;
+  line-height: 80%;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
 }

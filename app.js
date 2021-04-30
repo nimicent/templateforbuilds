@@ -1,5 +1,3 @@
-
-
 // default template
 
 'use strict'
@@ -17,7 +15,7 @@ const createError = require('http-errors'),
 // define routes
 let indexRouter = require('./routes/index'),
     usersRouter = require('./routes/users');
-    
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
